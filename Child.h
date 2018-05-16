@@ -7,13 +7,13 @@ class Parent;
 
 class Child : public Human {
 private: 
-	Parent mom; 
-	Parent dad; 
+	Parent *mom; 
+	Parent *dad; 
 	Child();
 
 
 public:
-	Child(Parent, Parent); 
+	Child(Parent &, Parent &); 
 	friend void Parent::changeChildName(Child, string); 
 
 	void work(); 
