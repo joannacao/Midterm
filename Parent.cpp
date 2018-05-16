@@ -10,6 +10,10 @@ Parent::Parent(string n, int a, char s) : Human(n,a,s)
 {
 }
 
+Parent::Parent() : Human("", 0, 'M')
+{
+}
+
 void Parent::copy(Parent p)
 {
 	 this->setName(p.getName()); 
