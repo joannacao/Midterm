@@ -6,10 +6,12 @@
 
 using namespace std;
 
-Child::Child(Parent m, Parent d) : Human("", 5, 'M')
+Child::Child(Parent &m, Parent &d) : Human("", 5, 'M')
 {
-	mom.copy(m); 
-	dad.copy(d); 
+	mom = new Parent; 
+	dad = new Parent; 
+	mom = &m; 
+	dad = &d; 
 	//Human("", 0, 'F'); 
 	//Child(); 
 }
