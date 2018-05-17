@@ -8,12 +8,8 @@ using namespace std;
 
 Child::Child(Parent &m, Parent &d) : Human("", 5, 'M')
 {
-	mom = new Parent; 
-	dad = new Parent; 
 	mom = &m; 
-	dad = &d; 
-	//Human("", 0, 'F'); 
-	//Child(); 
+	dad = &d;  
 }
 
 void Child::work()
@@ -25,9 +21,9 @@ void Child::work()
 		cout << "Student"; 
 	}
 }
-
+/*
 void Parent::changeChildName(Child c, string n)
 {
 	c.setName(n); 
 }
-
+*/
