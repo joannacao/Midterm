@@ -7,8 +7,8 @@ class Parent;
 
 class Child : public Human {
 private: 
-	Parent *mom; 
-	Parent *dad; 
+	Parent mom; 
+	Parent dad; 
 	Child();
 
 
