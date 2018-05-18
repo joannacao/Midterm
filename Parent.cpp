@@ -29,3 +29,8 @@ void Parent::work() {
 	}
 }
 
+void Parent::changeChildName(Child &c, string n)
+{
+	c.setName(n); 
+}
+
