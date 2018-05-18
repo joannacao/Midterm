@@ -1,8 +1,8 @@
 #pragma once
 #include "stdafx.h"
+#include <vector>
 #include "Human.h"
 #include "Child.h"
-#include <vector>
 
 class Child; 
 
@@ -12,13 +12,11 @@ private:
 
 public: 
 	Parent(string, int, char); 
-	Parent(); 
-	void copy(Parent); 
-	void setChildren(Child); 
+	void setChildren(Child &); 
 
 	Child getChildren(int); 
 
-	void changeChildName(Child,string); 
+	void changeChildName(Child &,string); 
 
 	void work(); 
 };
