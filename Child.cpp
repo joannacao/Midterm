@@ -21,9 +21,3 @@ void Child::work()
 		cout << "Student"; 
 	}
 }
-/*
-void Parent::changeChildName(Child c, string n)
-{
-	c.setName(n); 
-}
-*/
