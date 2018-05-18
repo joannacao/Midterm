@@ -12,6 +12,7 @@ private:
 
 public: 
 	Parent(string, int, char); 
+	Parent(vector<Child> &);
 	void setChildren(Child &); 
 
 	Child getChildren(int); 
