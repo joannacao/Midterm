@@ -13,8 +13,17 @@ using namespace std;
 
 int main()
 {
-	Parent dad("Homer", 36, 'M'); 
-	Parent mom("Mach", 34, 'F'); 
+	//Parent dad("Homer", 36, 'M'); 
+	//Parent mom("Mach", 34, 'F'); 
+	vector<Child> c; 
+	Parent dad(c);
+	Parent mom(c); 
+	dad.setName("Homer"); 
+	dad.setAge(36); 
+	dad.setSex('M');
+	mom.setName("Mach"); 
+	mom.setAge(34); 
+	mom.setSex('F'); 
 	Child c1(dad, mom); 
 	Child c2(dad, mom); 
 	Child c3(dad, mom); 
