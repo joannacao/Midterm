@@ -10,6 +10,11 @@ Parent::Parent(string n, int a, char s) : Human(n,a,s)
 {
 }
 
+Parent::Parent(vector<Child>& v) : Human("", 0, 'M')
+{
+	children = v; 
+}
+
 void Parent::setChildren(Child &c)
 {
 	children.push_back(c);
