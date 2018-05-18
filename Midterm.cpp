@@ -2,11 +2,11 @@
 //
 
 #include "stdafx.h"
+#include <iostream>
+#include <string>
 #include "Human.h"
 #include "Parent.h"
 #include "Child.h"
-#include <iostream>
-#include <string>
 
 using namespace std; 
 
