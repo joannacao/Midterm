@@ -3,7 +3,7 @@
 #include "Human.h"
 #include "Parent.h"
 
-class Parent; 
+//class Parent; 
 
 class Child : public Human {
 private: 
@@ -14,7 +14,7 @@ private:
 
 public:
 	Child(Parent &, Parent &); 
-	//friend void Parent::changeChildName(Child, string); 
+	friend void Parent::changeChildName(Child, string); 
 
 	void work(); 
 
