@@ -2,7 +2,6 @@
 #include "stdafx.h"
 #include <vector>
 #include "Human.h"
-#include "Child.h"
 
 class Child; 
 
